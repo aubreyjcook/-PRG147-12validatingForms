@@ -76,7 +76,61 @@
             </div>
             <div class="row">
                 <div class="twelve columns">
-                    <p id="loop"></p>
+                    <form id="dataForm">
+                        <p>
+                            <label><strong>First Name</strong></label>
+                            <input name="first" id="first" type="text" onblur="checkFirst()">
+
+                        </p>
+                        <p>
+                            <label><strong>Last Name</strong></label>
+                            <input name="last" id="last" type="text" onblur="checkLast()">
+
+                        </p>
+                        <p>
+                            <label><strong>Home Phone (800) 455-5555</strong></label>
+                            <input name="home" id="home" type="text" onblur="checkHome()">
+
+                        </p>
+                        <p>
+                            <label><strong>Cell (800) 455-5555</strong></label>
+                            <input name="cell" id="cell" type="text" onblur="checkCell()">
+
+                        </p>
+                        <p>
+                            <label><strong>Email</strong></label>
+                            <input name="email" id="email" type="text" onblur="checkEmail()">
+
+                        </p>
+                        <p>
+                            <label><strong>Address</strong></label>
+                            <input name="address" id="address" type="text" onblur="checkAddress()">
+
+                        </p>
+                        <p>
+                            <label><strong>City</strong></label>
+                            <input name="city" id="city" type="text" onblur="checkCity()">
+
+                        </p>
+                        <p>
+                            <label><strong>State</strong></label>
+                            <input name="state" id="state" type="text" onblur="checkState()">
+
+                        </p>
+                        <p>
+                            <label><strong>Zip</strong></label>
+                            <input name="zip" id="zip" type="text" onblur="checkZip()">
+                        </p>
+                        <p>
+                            <input type="submit" name="submit" id="submit" value="submit">
+                            <button type=reset>Reset</button>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns" id="errorField">
+                    <p id="errorMessage">&nbsp;</p>
                 </div>
             </div>
         </main>
